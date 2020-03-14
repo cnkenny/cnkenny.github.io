@@ -6,19 +6,25 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://blog.gbbgle.com">
-  <title>Archives | 不积跬步无以至千里</title>
+  <title>How to Install Odoo 12 on CentOS 7 | 不积跬步无以至千里</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
-  <meta name="description" content="记录成长">
-<meta property="og:type" content="website">
-<meta property="og:title" content="不积跬步无以至千里">
-<meta property="og:url" content="https://blog.gbbgle.com/archives/index.html">
+  <meta name="description" content="Odoo is the most popular all-in-one business software in the world. It offers a range of business applications including CRM, website, e-Commerce, billing, accounting, manufacturing, warehouse, proje">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to Install Odoo 12 on CentOS 7">
+<meta property="og:url" content="https://blog.gbbgle.com/How-to-Install-Odoo-12-on-CentOS-7/index.html">
 <meta property="og:site_name" content="不积跬步无以至千里">
-<meta property="og:description" content="记录成长">
+<meta property="og:description" content="Odoo is the most popular all-in-one business software in the world. It offers a range of business applications including CRM, website, e-Commerce, billing, accounting, manufacturing, warehouse, proje">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://blog.gbbgle.com/How-to-Install-Odoo-12-on-CentOS-7/featured.jpg">
+<meta property="og:image" content="https://blog.gbbgle.com/How-to-Install-Odoo-12-on-CentOS-7/odoo-12-centos.jpg">
+<meta property="article:published_time" content="2020-03-14T10:17:00.000Z">
+<meta property="article:modified_time" content="2020-03-14T11:45:16.920Z">
 <meta property="article:author" content="Kenny">
+<meta property="article:tag" content="Odoo">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://blog.gbbgle.com/How-to-Install-Odoo-12-on-CentOS-7/featured.jpg">
   
     <link rel="alternative" href="/atom.xml" title="不积跬步无以至千里" type="application/atom+xml">
   
@@ -203,41 +209,234 @@
               class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-How-to-Install-Odoo-12-on-CentOS-7" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2020" class="archive-year">2020</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/How-to-Install-Odoo-12-on-CentOS-7/" class="archive-article-date">
-        <time datetime="2020-03-14T10:17:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-14</time>
-</a>
-
-        </div>
-    	 
+      <header class="article-header">
   
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/How-to-Install-Odoo-12-on-CentOS-7/" target="_blank">How to Install Odoo 12 on CentOS 7</a>
   
+    <h1 class="article-title" itemprop="name">
+      How to Install Odoo 12 on CentOS 7
     </h1>
   
 
 
-        <div class="article-info info-on-right">
+  
+  
+        
+        <span id="busuanzi_container_page_pv" style='display:none' class="archive-article-date">
+              <i class="icon-smile icon"></i> 阅读数：<span id="busuanzi_value_page_pv"></span>次
+        </span>
+
+<a href="/How-to-Install-Odoo-12-on-CentOS-7/" class="archive-article-date">
+        <time datetime="2020-03-14T10:17:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-14</time>
+</a>
+
+  
+  
+    
+<div style="margin-top:10px;">
+  <span class="post-time">
+    <span class="post-meta-item-icon">
+      <!-- fonts.scss -->
+      <!-- 百度字体平台:http://fontstore.baidu.com/static/editor/index.html -->
+      <i class="icon-statistics"></i>
+      <span class="post-meta-item-text"> 字数统计:</span>
+      <span class="post-count">1.1k字</span>
+    </span>
+  </span>
+
+  <span class="post-time">
+    &nbsp; | &nbsp;
+    <span class="post-meta-item-icon">
+      <i class="icon-book icon"></i>
+      <span class="post-meta-item-text"> 阅读时长≈</span>
+      <span class="post-count">6分</span>
+    </span>
+  </span>
+</div>
+
+
+  
+  </header>
+  
+  <div class="article-entry" itemprop="articleBody">
+    
+    <p><img src="/How-to-Install-Odoo-12-on-CentOS-7/featured.jpg" alt></p>
+<p>Odoo is the most popular all-in-one business software in the world. It offers a range of business applications including CRM, website, e-Commerce, billing, accounting, manufacturing, warehouse, project management, inventory and much more, all seamlessly integrated.</p>
+<a id="more"></a>
+
+<p>In this tutorial, we’ll show you how to install <a href="https://www.odoo.com/" target="_blank" rel="noopener">Odoo</a> 12 from source inside a Python virtual environment on a CentOS 7 machine.</p>
+<h3 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h3><p>Make sure you are logged in as a <a href="/How-To-Create-a-Sudo-User-on-CentOS/">user with sudo privileges</a> before proceeding with the tutorial.</p>
+<h3 id="Install-Python-3-6-and-Odoo-Dependencies"><a href="#Install-Python-3-6-and-Odoo-Dependencies" class="headerlink" title="Install Python 3.6 and Odoo Dependencies"></a>Install Python 3.6 and Odoo Dependencies</h3><p>We will <a href="/">install Python 3.6</a> packages from the Software Collections (SCL) repository.</p>
+<p>By enabling SCL you will gain access to the newer versions of programming languages and services which are not available in the core repositories.</p>
+<p>Enable the EPEL and SCL repositories with the following command:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install epel-release centos-release-scl</span><br></pre></td></tr></table></figure>
+
+<p>Once the repositories are enabled, install Python 3.6 all the tools required to build Odoo dependencies:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install rh-python36 git gcc wget nodejs-less libxslt-devel bzip2-devel openldap-devel libjpeg-devel freetype-devel</span><br></pre></td></tr></table></figure>
+
+<p>During the installation you will be prompted to accept the GPG keys.</p>
+<h3 id="Create-Odoo-User"><a href="#Create-Odoo-User" class="headerlink" title="Create Odoo User"></a>Create Odoo User</h3><p>Create a new system user and group with home directory <code>/opt/odoo</code> that will run the Odoo service:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo useradd -m -U -r -d &#x2F;opt&#x2F;odoo12 -s &#x2F;bin&#x2F;bash odoo12</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>You can name the user whatever you like, just make sure you create a PostgreSQL user with the same name.</p>
+</blockquote>
+<h3 id="Install-and-configure-PostgreSQL"><a href="#Install-and-configure-PostgreSQL" class="headerlink" title="Install and configure PostgreSQL"></a>Install and configure PostgreSQL</h3><p>At the time of writing this article, the latest version of PostgreSQL available from the CentOS repositories is PostgreSQL version 9.2 which is not officially supported by Odoo.</p>
+<p>We’ll install PostgreSQL 10 from the official PostgreSQL repositories.</p>
+<p>Start by enabling the PostgreSQL repository:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install https://download.postgresql.org/pub/repos/yum/10/redhat/rhel-7-x86_64/pgdg-centos10-10-2.noarch.rpm</span><br></pre></td></tr></table></figure>
+
+<p>Install the <a href="https://linuxize.com/post/how-to-install-postgresql-on-centos-7/" target="_blank" rel="noopener">PostgreSQL</a> server and create a new PostgreSQL database cluster:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install postgresql10-server postgresql10-devel</span><br><span class="line">sudo /usr/pgsql-10/bin/postgresql-10-setup initdb</span><br></pre></td></tr></table></figure>
+
+<p>Once the installation is completed, enable and start the PostgreSQL service:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl <span class="built_in">enable</span> postgresql-10</span><br><span class="line">sudo systemctl start postgresql-10</span><br></pre></td></tr></table></figure>
+
+<p>Create a PostgreSQL user with the same name as the previously created system user, in our case odoo12:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo su - postgres -c &quot;createuser -s odoo12&quot;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Install-Wkhtmltopdf"><a href="#Install-Wkhtmltopdf" class="headerlink" title="Install Wkhtmltopdf"></a>Install Wkhtmltopdf</h3><p>The <code>wkhtmltox</code> package provides a set of open-source command line tools which can render HTML into PDF and various image formats. In order to print PDF reports, you will need the <code>wkhtmltopdf</code> tool. The recommended version for Odoo is <code>0.12.1</code> which is not available in the official CentOS 7 repositories.</p>
+<p>Download the recommended version with the following wget command:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://github.com/wkhtmltopdf/wkhtmltopdf/releases/download/0.12.1/wkhtmltox-0.12.1_linux-centos7-amd64.rpm</span><br></pre></td></tr></table></figure>
+
+<p>Once the download is complete, install the <code>rpm</code> package by typing:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo yum localinstall wkhtmltox-0.12.1_linux-centos7-amd64.rpm</span><br></pre></td></tr></table></figure>
+
+<h3 id="Install-and-Configure-Odoo-12"><a href="#Install-and-Configure-Odoo-12" class="headerlink" title="Install and Configure Odoo 12"></a>Install and Configure Odoo 12</h3><p>Before starting with the installation process, make sure you switch to user “odoo12”:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo su - odoo12</span><br></pre></td></tr></table></figure>
+
+<p>Start by cloning the Odoo 12 source code from the Odoo GitHub repository:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://www.github.com/odoo/odoo --depth 1 --branch 12.0 /opt/odoo12/odoo</span><br></pre></td></tr></table></figure>
+
+<p>Enable software collections so we can access the python 3.6 binaries:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">scl <span class="built_in">enable</span> rh-python36 bash</span><br></pre></td></tr></table></figure>
+
+<p>Create a new Python virtual environment for the Odoo installation with:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /opt/odoo12</span><br><span class="line">python3 -m venv venv</span><br></pre></td></tr></table></figure>
+
+<p>Activate the environment:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">source</span> venv/bin/activate</span><br></pre></td></tr></table></figure>
+
+<p>Install all required Python modules:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 install -r odoo/requirements.txt</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>If you encounter any compilation errors during the installation, make sure that you installed all of the required dependencies listed in the <a href="/">Install Python 3.6 and Odoo Dependencies</a> section.</p>
+</blockquote>
+<p>Once the installation is completed deactivate the environment using the following command:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">deactivate</span><br></pre></td></tr></table></figure>
+
+<p>Create a new directory for the custom addons:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir /opt/odoo12/odoo-custom-addons</span><br></pre></td></tr></table></figure>
+
+<p>Switch back to your sudo user:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">exit</span></span><br></pre></td></tr></table></figure>
+
+<p>Next, open your <a href="/">text editor</a> and create the following configuration file:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/odoo12.conf</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">/etc/odoo12.conf</span><br><span class="line"></span><br><span class="line">[options]</span><br><span class="line">; This is the password that allows database operations:</span><br><span class="line">admin_passwd = superadmin_passwd</span><br><span class="line">db_host = False</span><br><span class="line">db_port = False</span><br><span class="line">db_user = odoo12</span><br><span class="line">db_password = False</span><br><span class="line">addons_path = /opt/odoo12/odoo/addons, /opt/odoo12/odoo-custom-addons</span><br></pre></td></tr></table></figure>
+
+<p>Save and close the file.</p>
+<blockquote>
+<p>Do not forget to change the <code>superadmin_passwd</code> to something more secure.</p>
+</blockquote>
+<h3 id="Create-a-systemd-unit-file"><a href="#Create-a-systemd-unit-file" class="headerlink" title="Create a systemd unit file"></a>Create a systemd unit file</h3><p>To run Odoo as a service we will create a unit file.</p>
+<p>Open your text editor and create a file named <code>odoo12.service</code> inside the <code>/etc/systemd/system/</code> directory:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo nano /etc/systemd/system/odoo12.service</span><br></pre></td></tr></table></figure>
+
+<p>Paste the following content:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">/etc/systemd/system/odoo12.service</span><br><span class="line"></span><br><span class="line">[Unit]</span><br><span class="line">Description=Odoo12</span><br><span class="line">Requires=postgresql-10.service</span><br><span class="line">After=network.target postgresql-10.service</span><br><span class="line"></span><br><span class="line">[Service]</span><br><span class="line">Type=simple</span><br><span class="line">SyslogIdentifier=odoo12</span><br><span class="line">PermissionsStartOnly=<span class="literal">true</span></span><br><span class="line">User=odoo12</span><br><span class="line">Group=odoo12</span><br><span class="line">ExecStart=/usr/bin/scl <span class="built_in">enable</span> rh-python36 -- /opt/odoo12/venv/bin/python3 /opt/odoo12/odoo/odoo-bin -c /etc/odoo12.conf</span><br><span class="line">StandardOutput=journal+console</span><br><span class="line"></span><br><span class="line">[Install]</span><br><span class="line">WantedBy=multi-user.target</span><br></pre></td></tr></table></figure>
+
+<p>Save the file and close the editor.</p>
+<p>Notify Systemd that we created a new unit file:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl daemon-reload</span><br></pre></td></tr></table></figure>
+
+<p>Start and enable the Odoo service by executing:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl <span class="built_in">enable</span> odoo12</span><br><span class="line">sudo systemctl start odoo12</span><br></pre></td></tr></table></figure>
+
+<p>You can check the service status with the following command:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo systemctl status odoo12</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">● odoo12.service - Odoo12</span><br><span class="line">   Loaded: loaded (&#x2F;etc&#x2F;systemd&#x2F;system&#x2F;odoo12.service; disabled; vendor preset: disabled)</span><br><span class="line">   Active: active (running) since Tue 2018-10-30 16:35:09 UTC; 6s ago</span><br><span class="line"> Main PID: 24649 (scl)</span><br><span class="line">   CGroup: &#x2F;system.slice&#x2F;odoo12.service</span><br><span class="line">           ├─24649 &#x2F;usr&#x2F;bin&#x2F;scl enable rh-python36 -- &#x2F;opt&#x2F;odoo12&#x2F;venv&#x2F;bin&#x2F;python3 &#x2F;opt&#x2F;odoo12&#x2F;odoo&#x2F;odoo-bin -c &#x2F;etc&#x2F;odoo12.conf</span><br><span class="line">           ├─24650 &#x2F;bin&#x2F;bash &#x2F;var&#x2F;tmp&#x2F;scldyaa9h</span><br><span class="line">           └─24653 &#x2F;opt&#x2F;odoo12&#x2F;venv&#x2F;bin&#x2F;python3 &#x2F;opt&#x2F;odoo12&#x2F;odoo&#x2F;odoo-bin -c &#x2F;etc&#x2F;odoo12.conf</span><br></pre></td></tr></table></figure>
+
+<p>If you want to see the messages logged by the Odoo service you can use the command below:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo journalctl -u odoo12</span><br></pre></td></tr></table></figure>
+
+<h3 id="Test-the-Installation"><a href="#Test-the-Installation" class="headerlink" title="Test the Installation"></a>Test the Installation</h3><p>Open your browser and type: <code>http://&lt;your_domain_or_IP_address&gt;:8069</code></p>
+<p>Assuming the installation is successful, a screen similar to the following will appear:<br><img src="/How-to-Install-Odoo-12-on-CentOS-7/odoo-12-centos.jpg" alt></p>
+<p>If you can’t access the page then probably your firewall is blocking port <code>8069</code>.</p>
+<p>Use the following commands to open the necessary port:</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo firewall-cmd --permanent --zone=public --add-port=8069/tcp</span><br><span class="line">sudo firewall-cmd --reload</span><br></pre></td></tr></table></figure>
+
+<h3 id="Conclusion"><a href="#Conclusion" class="headerlink" title="Conclusion"></a>Conclusion</h3><p>This tutorial walked you through the installation of Odoo 12 on CentOS 7 in a Python virtual environment.</p>
+<p>You may also want to check our tutorial about <a href="/">how to create automatic daily backups of your Odoo databases</a>.</p>
+<p>If you hit any problems, leave a comment below.</p>
+
+    
+
+    
+    <div class="page-reward">
+      <a href="javascript:void(0);" class="page-reward-btn tooltip-top" target="_self">
+        <div class="tooltip tooltip-east">
+          <span class="tooltip-item">
+            赏
+          </span>
+          <span class="tooltip-content">
+            <span class="tooltip-text">
+              <span class="tooltip-inner">
+                <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i
+                    class="icon icon-quo-right"></i></p>
+                <div class="reward-box">
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/alipay.jpg">
+                    <span class="reward-type">支付宝</span>
+                  </div>
+                  
+                  
+                  <div class="reward-box-item">
+                    <img class="reward-img" src="/img/weixin.jpg">
+                    <span class="reward-type">微信</span>
+                  </div>
+                  
+                </div>
+              </span>
+            </span>
+          </span>
+        </div>
+      </a>
+    </div>
+    
+
+    
+    <div class="declare"> 
+      <ul class="post-copyright">
+        <li>
+          <strong>本文作者：</strong>
+          Kenny
+        </li>
+        <li>
+          <strong>本文链接：</strong>
+          <a href="https://blog.gbbgle.com/How-to-Install-Odoo-12-on-CentOS-7/" title="How to Install Odoo 12 on CentOS 7" target="_blank">https://blog.gbbgle.com/How-to-Install-Odoo-12-on-CentOS-7/</a>
+        </li>
+        
+        <li>
+          <strong>版权声明： </strong>
           
+          本博客所有文章除特别声明外，均采用 <a href="https://github.com/JoeyBling/hexo-theme-yilia-plus/blob/master/LICENSE" rel="external nofollow" target="_blank">MIT</a> 许可协议。转载请注明出处！
+        </li>
+        
+      </ul>
+    </div>
+    
+
+  </div>
+  <div class="article-info article-info-index">
+    
+    
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -249,7 +448,7 @@
 		</ul>
 	</div>
 
-          
+    
 	<div class="article-category tagcloud">
 		<i class="icon-book icon"></i>
 		<ul class="article-tag-list">
@@ -262,107 +461,53 @@
 	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
+    
+
+    
+    <div class="clearfix"></div>
+  </div>
   </div>
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/How-to-Set-Up-a-Firewall-with-FirewallD-on-CentOS-7/" class="archive-article-date">
-        <time datetime="2020-03-14T08:40:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-14</time>
-</a>
 
+
+<nav id="article-nav">
+  
+  
+    <a href="/How-to-Set-Up-a-Firewall-with-FirewallD-on-CentOS-7/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">How to Set Up a Firewall with FirewallD on CentOS 7</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/How-to-Set-Up-a-Firewall-with-FirewallD-on-CentOS-7/" target="_blank">How to Set Up a Firewall with FirewallD on CentOS 7</a>
-  
-    </h1>
-  
+        
+        
+    </div>
+</aside>
 
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">Firewall</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-	<div class="article-category tagcloud">
-		<i class="icon-book icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Linux/" class="article-tag-list-link color1">Linux</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="/categories/Linux/CentOS/" class="article-tag-list-link color2">CentOS</a>
-        		</li>
-      		
-		</ul>
-	</div>
 
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	
-<a href="/How-To-Create-a-Sudo-User-on-CentOS/" class="archive-article-date">
-        <time datetime="2020-03-14T08:29:09.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2020-03-14</time>
-</a>
-
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-	
-	  <a class="archive-article-title" href="/How-To-Create-a-Sudo-User-on-CentOS/" target="_blank">How To Create a Sudo User on CentOS</a>
-  
-    </h1>
-  
 
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
 
-    
+
+
+
+
 
 
           </div>
@@ -402,8 +547,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: true,
