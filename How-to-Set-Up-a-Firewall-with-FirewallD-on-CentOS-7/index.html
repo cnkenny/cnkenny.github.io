@@ -5,7 +5,7 @@
   
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
-  <link rel="dns-prefetch" href="https://blog.gbbgle.com">
+  <link rel="dns-prefetch" href="https://cnkenny.github.io">
   <title>How to Set Up a Firewall with FirewallD on CentOS 7 | 不积跬步无以至千里</title>
   <meta name="generator" content="hexo-theme-yilia-plus">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -13,17 +13,17 @@
   <meta name="description" content="A properly configured firewall is one of the most important aspects of overall system security.">
 <meta property="og:type" content="article">
 <meta property="og:title" content="How to Set Up a Firewall with FirewallD on CentOS 7">
-<meta property="og:url" content="https://blog.gbbgle.com/How-to-Set-Up-a-Firewall-with-FirewallD-on-CentOS-7/index.html">
+<meta property="og:url" content="https://cnkenny.github.io/How-to-Set-Up-a-Firewall-with-FirewallD-on-CentOS-7/index.html">
 <meta property="og:site_name" content="不积跬步无以至千里">
 <meta property="og:description" content="A properly configured firewall is one of the most important aspects of overall system security.">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://blog.gbbgle.com/How-to-Set-Up-a-Firewall-with-FirewallD-on-CentOS-7/featured.jpg">
+<meta property="og:image" content="https://cnkenny.github.io/How-to-Set-Up-a-Firewall-with-FirewallD-on-CentOS-7/featured.jpg">
 <meta property="article:published_time" content="2020-03-14T08:40:00.000Z">
 <meta property="article:modified_time" content="2020-03-14T08:43:40.556Z">
 <meta property="article:author" content="Kenny">
 <meta property="article:tag" content="Firewall">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://blog.gbbgle.com/How-to-Set-Up-a-Firewall-with-FirewallD-on-CentOS-7/featured.jpg">
+<meta name="twitter:image" content="https://cnkenny.github.io/How-to-Set-Up-a-Firewall-with-FirewallD-on-CentOS-7/featured.jpg">
   
     <link rel="alternative" href="/atom.xml" title="不积跬步无以至千里" type="application/atom+xml">
   
@@ -267,7 +267,7 @@
 
 <p><a href="https://firewalld.org/" target="_blank" rel="noopener" title="FirewallD">FirewallD</a> is a complete firewall solution that manages the system’s iptables rules and provides a D-Bus interface for operating on them. Starting with CentOS 7, FirewallD replaces iptables as the default firewall management tool.</p>
 <p>In this tutorial, we show you how to set up a firewall with FirewallD on your CentOS 7 system and explain to you the basic FirewallD concepts.</p>
-<h2 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h2><p>Before you start with this tutorial, make sure you are logged into your server with a user account with sudo privileges or with the root user. The best practice is to run administrative commands as a sudo user instead of root. If you don’t have a sudo user on your CentOS system, you can create one by following <a href="https://blog.gbbgle.com/How-To-Create-a-Sudo-User-on-CentOS/" title="these instructions">these instructions</a>.</p>
+<h2 id="Prerequisites"><a href="#Prerequisites" class="headerlink" title="Prerequisites"></a>Prerequisites</h2><p>Before you start with this tutorial, make sure you are logged into your server with a user account with sudo privileges or with the root user. The best practice is to run administrative commands as a sudo user instead of root. If you don’t have a sudo user on your CentOS system, you can create one by following <a href="https://blog.gbbgle.com/How-To-Create-a-Sudo-User-on-CentOS/" target="_blank" rel="noopener" title="these instructions">these instructions</a>.</p>
 <h2 id="Basic-Firewalld-Concepts"><a href="#Basic-Firewalld-Concepts" class="headerlink" title="Basic Firewalld Concepts"></a>Basic Firewalld Concepts</h2><p>FirewallD uses the concepts of zones and services, instead of iptables chain and rules. Based on the zones and services you’ll configure, you can control what traffic is allowed or disallowed to and from the system.</p>
 <p>FirewallD can be configured and managed using the <code>firewall-cmd</code> command-line utility.</p>
 <h3 id="Firewalld-Zones"><a href="#Firewalld-Zones" class="headerlink" title="Firewalld Zones"></a>Firewalld Zones</h3><p>Zones are predefined sets of rules specifying what traffic should be allowed based on the level of trust on the networks your computer is connected to. You can assign network interfaces and sources to a zone.</p>
@@ -513,7 +513,7 @@ dmz (active)
         </li>
         <li>
           <strong>本文链接：</strong>
-          <a href="https://blog.gbbgle.com/How-to-Set-Up-a-Firewall-with-FirewallD-on-CentOS-7/" title="How to Set Up a Firewall with FirewallD on CentOS 7" target="_blank">https://blog.gbbgle.com/How-to-Set-Up-a-Firewall-with-FirewallD-on-CentOS-7/</a>
+          <a href="https://cnkenny.github.io/How-to-Set-Up-a-Firewall-with-FirewallD-on-CentOS-7/" title="How to Set Up a Firewall with FirewallD on CentOS 7" target="_blank">https://cnkenny.github.io/How-to-Set-Up-a-Firewall-with-FirewallD-on-CentOS-7/</a>
         </li>
         
         <li>
@@ -623,7 +623,7 @@ dmz (active)
   <div class="outer">
     <div id="footer-info">
     	<div class="footer-left">
-    		&copy; 2020 <a href="https://blog.gbbgle.com/" target="_blank">Kenny</a>
+    		&copy; 2020 <a href="https://cnkenny.github.io/" target="_blank">Kenny</a>
     	</div>
       	<div class="footer-right">
 			
